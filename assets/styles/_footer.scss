@@ -1,0 +1,53 @@
+footer {
+    background: $dark-blue;
+    width: 100%;
+    height: 15vh;
+
+    @include displayFlex(space-evenly);
+
+    .footer-images {
+        padding-top: 1.5rem;
+        flex-direction: column;
+        
+        .social-media {
+            margin: 2rem 0rem;
+
+            @include displayFlex(center);
+
+            img {
+                padding: .5rem;
+            }
+        }
+    }
+
+    table {
+        td {
+            padding: 0 2rem;
+            ul {
+                padding: .5rem 0;
+                font-weight: 300;
+            }
+        }
+
+    } 
+
+    .copyright {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .btn-request {
+            width: 200px;
+        }
+
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: $bright-cyan;
+    }
+
+
+}

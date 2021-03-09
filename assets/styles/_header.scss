@@ -1,0 +1,28 @@
+header {
+    width: 100vw;
+    height: 10vh;
+
+
+    z-index: 999;
+
+    background: white;
+
+    @include displayFlex(space-evenly);
+
+    .menu-toggle {
+        display: none
+    }
+
+    nav {
+       @include displayFlex(center);
+
+       li {
+           padding: .8rem;
+           color: $grayish-blue;
+       }
+
+       li:hover {
+           background: rgba(235, 235, 235, 0.466);
+       }
+    }
+}

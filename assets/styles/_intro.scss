@@ -1,0 +1,56 @@
+
+.intro {
+    @include displayFlex(space-between);
+    background: $very-light-gray;
+    height: 75vh;
+    width: 100vw;
+    overflow: hidden;
+
+    .abstract {
+        width: 380px;
+        margin-top: -300px;
+        margin-left: 120px;
+
+
+
+        h1 {
+            color: $dark-blue;
+            font-weight: normal;
+
+            font-size: 50px
+
+        }
+
+        p {
+            padding: 1rem 0;
+            color: $grayish-blue;
+        }
+
+        .btn-request {
+            width: 150px
+        }
+
+    }
+    
+    
+    .images-intro {
+        @include displayFlex(center);
+        width: 50vw;
+        height: 100vh;
+        overflow: hidden;
+
+        margin-top: -80px;
+        z-index: 0;
+
+        background-image: url(../images/bg-intro-desktop.svg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position-x: -50px;
+        background-position-y: -100px;
+
+        img {
+            margin-bottom: -75px;
+        }
+        
+    }
+}

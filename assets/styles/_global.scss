@@ -1,0 +1,53 @@
+@mixin displayFlex($justify) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include displayFlex(center);
+    flex-direction: column;
+    
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+h2 {
+    color: $dark-blue;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+h3 {
+    color: $dark-blue;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+p {
+    padding: 1rem 0;
+    width: 22rem;
+    color: $grayish-blue;
+}
+
+a {
+    text-decoration: none;
+}
+

@@ -1,0 +1,43 @@
+.articles {
+    background: $very-light-gray;
+    width: 100vw;
+    padding-top: 1rem;
+    
+    h2 {
+        margin-left: 180px;
+        padding: 4rem 0;
+    }
+    
+    .latest-articles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 50px;
+        margin-left: 100px;
+
+        
+        .card {    
+            border-radius: .4rem;
+            
+            width: 350px;
+            height: 100%;
+            background: rgb(255, 255, 255);
+            
+            .article-data {
+                padding: 2rem;
+
+                .author {
+                    color: $grayish-blue;
+                }
+
+                p {
+                    width: 300px;
+                }
+
+            }
+            img {
+                width: 350px;
+                border-radius: .4rem .4rem 0 0;
+            }
+        }
+    }
+}
