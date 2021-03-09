@@ -6,6 +6,7 @@
     header {
         width: 100%;
         height: 6vh;
+        @include displayFlex(space-around);
 
         button {
             display: none;
